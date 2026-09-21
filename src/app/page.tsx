@@ -317,9 +317,9 @@ export default function HomePage() {
                 Play tonight.
               </h2>
               <p className="mt-2 max-w-xl text-offwhite/65">
-                Full Kit ships 3 paper boards so you start with no dartboard, a
-                Starter on the way, and paper board refills ($4.99) when you
-                need them.
+                Full Kit ships 3 paper boards so you start with no dartboard. Starter
+                Set is C$24.99 with your own darts and board. Paper board
+                refills are $4.99 when you need them.
               </p>
             </div>
             <Link

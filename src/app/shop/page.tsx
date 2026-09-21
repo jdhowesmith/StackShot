@@ -21,8 +21,9 @@ export default function ShopPage() {
           </h1>
           <p className="mt-4 text-lg text-offwhite/70">
             Full Game Kit includes 3 paper dartboards so you can start with no
-            dartboard. Starter Set coming soon. Paper Boards add-on for
-            refills. Prices in CAD. Cart saves on this device. Players 1–6.
+            dartboard. Starter Set is C$24.99 if you bring your own darts and
+            board. Paper Boards add-on for refills. Prices in CAD. Cart saves
+            on this device. Players 1–6.
           </p>
         </div>
 
