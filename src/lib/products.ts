@@ -33,18 +33,18 @@ export const products: Product[] = [
   {
     id: "starter",
     name: "Starter Set",
-    price: null,
-    priceLabel: "Coming soon",
+    price: 24.99,
+    priceLabel: "C$24.99",
     description:
-      "Lowest-entry STACKSHOT: the full deck plus branded flights. Use your own darts and board.",
+      "Only C$24.99 when you bring your own darts and board — full deck plus branded flights.",
     includes: [
       "72-card STACKSHOT deck",
       "4 branded dart flights",
-      "Use your own barrels, shafts & tips",
+      "Use your own darts & board",
     ],
     image: "/assets/starter-set.png",
-    available: false,
-    badge: "Coming soon",
+    available: true,
+    badge: "Own darts & board",
   },
   {
     id: "paper-boards",
