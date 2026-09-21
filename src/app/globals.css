@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-emerald: #0B3D2E;
+  --color-gold: #C9A227;
+  --color-charcoal: #1A1A1A;
+  --color-offwhite: #F5F2E8;
+  --color-emerald-light: #0f4f3b;
+  --color-gold-dim: #a8861f;
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1A1A1A;
+  color: #F5F2E8;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: #C9A227;
+  color: #1A1A1A;
+}
+
+/* Custom scrollbar for cart */
+.cart-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.cart-scroll::-webkit-scrollbar-thumb {
+  background: #C9A227;
+  border-radius: 3px;
+}
