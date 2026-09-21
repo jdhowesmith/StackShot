@@ -19,7 +19,7 @@ export const products: Product[] = [
     price: 49.99,
     priceLabel: "C$49.99",
     description:
-      "Everything you need for pub-night STACKSHOT — deck, darts, paper boards, and rules. Bring your board or hang ours.",
+      "Start right away — no dartboard required. Deck, 4 darts, 3 paper boards, and rules so you can hang a board and play tonight.",
     includes: [
       "72-card STACKSHOT deck",
       "4 branded steel-tip darts",
@@ -52,7 +52,7 @@ export const products: Product[] = [
     price: 4.99,
     priceLabel: "$4.99",
     description:
-      "Five branded 24×24 rolled paper dartboards — refills and play-anywhere extras.",
+      "Five branded 24×24 rolled paper dartboards — refills when yours are worn out, plus extras for play-anywhere nights.",
     includes: ["5 × 24×24 rolled paper dartboards", "STACKSHOT branded"],
     image: "/assets/paper-5pack-addon.png",
     available: true,

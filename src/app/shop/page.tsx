@@ -5,7 +5,7 @@ import { products } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Shop — STACKSHOT",
   description:
-    "Shop the STACKSHOT Full Game Kit, Starter Set, and Paper Boards Add-on. Flip. Throw. Clear.",
+    "Shop the STACKSHOT Full Game Kit (3 paper boards — start with no dartboard), Starter Set, and Paper Boards Add-on. Flip. Throw. Clear. Players 1–6.",
 };
 
 export default function ShopPage() {
@@ -17,11 +17,12 @@ export default function ShopPage() {
             Shop
           </p>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-5xl tracking-wide text-offwhite sm:text-6xl">
-            Bring your dartboard. We bring the rest.
+            Hang a paper board. Play tonight.
           </h1>
           <p className="mt-4 text-lg text-offwhite/70">
-            Premium emerald, charcoal, and gold — built for pub night and the
-            rec room. Prices in CAD. Cart saves on this device.
+            Full Game Kit includes 3 paper dartboards so you can start with no
+            dartboard. Starter Set coming soon. Paper Boards add-on for
+            refills. Prices in CAD. Cart saves on this device. Players 1–6.
           </p>
         </div>
 
@@ -40,7 +41,7 @@ export default function ShopPage() {
             </li>
             <li className="flex gap-2">
               <span className="text-gold">▸</span>
-              Complete throw kit in the Full Game Kit — play tonight
+              Full Kit ships 3 paper boards — start with no dartboard
             </li>
             <li className="flex gap-2">
               <span className="text-gold">▸</span>
@@ -48,7 +49,8 @@ export default function ShopPage() {
             </li>
             <li className="flex gap-2">
               <span className="text-gold">▸</span>
-              Fun for every age — Free Plays and Start Overs level the table
+              Fun for every skill level — Free Plays and Start Overs level the
+              table
             </li>
           </ul>
         </div>

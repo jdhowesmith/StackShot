@@ -20,12 +20,12 @@ const display = Bebas_Neue({
 export const metadata: Metadata = {
   title: "STACKSHOT — Flip. Throw. Clear.",
   description:
-    "STACKSHOT is the hybrid card-and-darts game you play on a real board. Flip your stack. Throw four darts. Clear it. Hit the bull.",
+    "STACKSHOT is the hybrid card-and-darts game for 1–6 players. Flip your stack. Throw four darts. Clear it. Hit the bull. Full Kit includes 3 paper boards — start with no dartboard.",
   metadataBase: new URL("https://stackshot.ca"),
   openGraph: {
     title: "STACKSHOT — Flip. Throw. Clear.",
     description:
-      "Cards + darts. Clear your stack. Hit the bull. Pub-night competitive.",
+      "Cards + darts for 1–6 players. Clear your stack. Hit the bull. 3 paper boards in the Full Kit — start with no dartboard.",
     url: "https://stackshot.ca",
     siteName: "STACKSHOT",
     type: "website",
