@@ -24,7 +24,7 @@ export default function ProductCard({ product, featured }: Props) {
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover"
+          className="object-contain p-3"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
         {product.badge && (
