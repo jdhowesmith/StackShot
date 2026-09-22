@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import { products } from "@/lib/products";
+import { shopProducts } from "@/lib/products";
 
 const steps = [
   {
@@ -330,7 +330,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {products.map((p) => (
+            {shopProducts.map((p) => (
               <ProductCard key={p.id} product={p} featured={p.id === "full-kit"} />
             ))}
           </div>

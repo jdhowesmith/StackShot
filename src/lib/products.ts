@@ -1,4 +1,10 @@
-export type ProductId = "full-kit" | "starter" | "paper-boards";
+export type ProductId =
+  | "full-kit"
+  | "starter"
+  | "paper-boards"
+  | "cage-wire"
+  | "cage-numbers"
+  | "board-simplified";
 
 export type Product = {
   id: ProductId;
@@ -57,7 +63,64 @@ export const products: Product[] = [
     image: "/assets/paper-5pack-addon.png",
     available: true,
   },
+  {
+    id: "cage-wire",
+    name: "STACKSHOT Cage (wire only)",
+    price: null,
+    priceLabel: "Coming soon",
+    description:
+      "Traditional steel wire spider for your own sisal board — outer circle, 20 radials, outer bull, and inner bull. No double or triple rings. No wire numbers. Drop it on the board you already own.",
+    includes: [
+      "Steel wire spider (no numbers)",
+      "Outer circle + 20 radials",
+      "Outer bull + inner bull",
+      "No double / triple rings",
+      "Circumferential mount ring",
+    ],
+    image: "/assets/sku-cage-no-numbers.png",
+    available: false,
+    badge: "Coming soon",
+  },
+  {
+    id: "cage-numbers",
+    name: "STACKSHOT Cage (with numbers)",
+    price: null,
+    priceLabel: "Coming soon",
+    description:
+      "Same STACKSHOT cage plus wire-formed numbers 1–20 in classic dartboard order (20 at top). Full traditional-cage replacement — minus doubles and triples. Steel wire only, no printed artwork.",
+    includes: [
+      "Steel wire spider with numbers 1–20",
+      "Classic order (20 at top)",
+      "Outer circle + 20 radials",
+      "Outer bull + inner bull",
+      "No double / triple rings",
+    ],
+    image: "/assets/sku-cage-with-numbers.png",
+    available: false,
+    badge: "Coming soon",
+  },
+  {
+    id: "board-simplified",
+    name: "STACKSHOT Board",
+    price: null,
+    priceLabel: "Coming soon",
+    description:
+      "Simplified STACKSHOT face: numbers 1–20 on contrasting segments, outer bull, and inner bull — no double or triple rings. Emerald outer ring with STACKSHOT branding all the way around. Paper 24×24 and/or sisal OEM later.",
+    includes: [
+      "Numbers 1–20 on segments",
+      "Outer bull + inner bull",
+      "No double / triple rings",
+      "Emerald STACKSHOT branded ring",
+      "Paper 24×24 and/or sisal OEM",
+    ],
+    image: "/assets/sku-board-branded.png",
+    available: false,
+    badge: "Coming soon",
+  },
 ];
+
+export const shopProducts = products.filter((p) => p.available);
+export const comingSoonProducts = products.filter((p) => !p.available);
 
 export function getProduct(id: ProductId): Product | undefined {
   return products.find((p) => p.id === id);

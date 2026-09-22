@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import ProductCard from "@/components/ProductCard";
-import { products } from "@/lib/products";
+import { comingSoonProducts, shopProducts } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Shop — STACKSHOT",
   description:
-    "Shop the STACKSHOT Full Game Kit (3 paper boards — start with no dartboard), Starter Set, and Paper Boards Add-on. Flip. Throw. Clear. Players 1–6.",
+    "Shop the STACKSHOT Full Game Kit (3 paper boards — start with no dartboard), Starter Set, and Paper Boards Add-on. Coming soon: cages and branded board. Flip. Throw. Clear. Players 1–6.",
 };
 
 export default function ShopPage() {
@@ -28,8 +28,31 @@ export default function ShopPage() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {products.map((p) => (
-            <ProductCard key={p.id} product={p} featured={p.id === "full-kit"} />
+          {shopProducts.map((p) => (
+            <ProductCard
+              key={p.id}
+              product={p}
+              featured={p.id === "full-kit"}
+            />
+          ))}
+        </div>
+
+        <div className="mt-20 mb-10 max-w-2xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+            Coming soon · New products
+          </p>
+          <h2 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-wide text-offwhite sm:text-5xl">
+            Cages & board
+          </h2>
+          <p className="mt-4 text-lg text-offwhite/70">
+            Wire spiders for your own sisal board, plus a simplified STACKSHOT
+            face — no doubles or triples. Not for sale yet.
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-3">
+          {comingSoonProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
           ))}
         </div>
 
