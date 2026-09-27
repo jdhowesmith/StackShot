@@ -98,10 +98,6 @@ export default function LegalPage() {
               domain ownership.
             </li>
             <li>
-              We do <strong className="text-offwhite">not</strong> claim patent
-              protection for STACKSHOT.
-            </li>
-            <li>
               Site and marketing imagery should not display third-party
               dartboard brand marks.
             </li>

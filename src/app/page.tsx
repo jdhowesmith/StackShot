@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import SeeItPlaySection from "@/components/SeeItPlaySection";
-import { shopProducts } from "@/lib/products";
+import { jrProduct, shopProducts } from "@/lib/products";
 
 const steps = [
   {
@@ -381,6 +381,84 @@ export default function HomePage() {
             Deck at a glance: 60 number cards (1–20 × 3) · 7 Free Play · 4 Start
             Over · 1 Bull
           </p>
+        </div>
+      </section>
+
+      {/* STACKSHOT JR — coming soon (under Full Kit) */}
+      <section
+        id="stackshot-jr"
+        className="scroll-mt-20 border-t border-gold/15 bg-gradient-to-b from-emerald/40 to-charcoal"
+        aria-labelledby="home-jr-heading"
+      >
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="mb-8 max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+              Coming soon
+            </p>
+            <h2
+              id="home-jr-heading"
+              className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-wide text-offwhite sm:text-5xl"
+            >
+              STACKSHOT JR
+            </h2>
+            <p className="mt-4 text-lg text-offwhite/70">
+              Soft darts · bright colors · ages 4+. The little stackers&apos;
+              version — not for sale yet, but the fun is almost here.
+            </p>
+          </div>
+
+          <article className="overflow-hidden rounded-xl border border-gold/25 bg-emerald/30 shadow-lg">
+            <div className="grid md:grid-cols-2">
+              <div className="relative aspect-[16/10] bg-charcoal md:aspect-auto md:min-h-[320px]">
+                <Image
+                  src={jrProduct.image}
+                  alt="STACKSHOT JR kit — board, soft darts, and mini tuck box"
+                  fill
+                  className="object-contain p-4"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <span className="absolute left-4 top-4 rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-wide text-charcoal">
+                  Coming soon · Ages 4+
+                </span>
+              </div>
+              <div className="relative aspect-[16/10] border-t border-gold/15 bg-charcoal md:aspect-auto md:min-h-[320px] md:border-l md:border-t-0">
+                <Image
+                  src={jrProduct.imageAlt!}
+                  alt="STACKSHOT JR four color match cards"
+                  fill
+                  className="object-contain p-4"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-end sm:justify-between sm:p-8">
+              <div className="max-w-xl">
+                <h3 className="text-2xl font-bold tracking-wide text-offwhite">
+                  {jrProduct.name}
+                </h3>
+                <p className="mt-1 text-lg font-semibold text-gold">
+                  {jrProduct.priceLabel}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-offwhite/70">
+                  {jrProduct.description}
+                </p>
+                <ul className="mt-4 grid gap-1.5 text-sm text-offwhite/80 sm:grid-cols-2">
+                  {jrProduct.includes.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Link
+                href="/shop#coming-soon-jr"
+                className="w-full shrink-0 rounded-md border border-gold/50 px-8 py-3 text-center text-sm font-bold uppercase tracking-wider text-gold transition hover:bg-gold hover:text-charcoal sm:w-auto"
+              >
+                Coming soon
+              </Link>
+            </div>
+          </article>
         </div>
       </section>
     </>
