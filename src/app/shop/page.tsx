@@ -6,7 +6,7 @@ import { comingSoonProducts, shopProducts } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Shop — STACKSHOT",
   description:
-    "Shop the STACKSHOT Full Game Kit (3 paper boards — start with no dartboard), Starter Set, and Paper Boards Add-on. Coming soon: cages and branded board. Flip. Throw. Clear. Players 1–6.",
+    "Pre-order the STACKSHOT 72-card deck. Full Game Kit, Starter Set, paper boards, cages, and branded board coming soon. Flip. Throw. Clear. Players 1–6.",
 };
 
 export default function ShopPage() {
@@ -18,13 +18,13 @@ export default function ShopPage() {
             Shop
           </p>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-5xl tracking-wide text-offwhite sm:text-6xl">
-            Hang a paper board. Play tonight.
+            Pre-order the deck.
           </h1>
           <p className="mt-4 text-lg text-offwhite/70">
-            Full Game Kit includes 3 paper dartboards so you can start with no
-            dartboard. Starter Set is C$24.99 if you bring your own darts and
-            board. Paper Boards add-on for refills. Prices in CAD. Cart saves
-            on this device. Players 1–6.
+            The STACKSHOT card deck is open for Pre-order at C$24.99 — bring your
+            own darts and board. Full Game Kit, Starter Set, paper boards,
+            cages, and the branded board are coming soon. Prices in CAD. Cart
+            saves on this device. Players 1–6.
           </p>
           <p className="mt-3 text-sm text-offwhite/50">
             STACKSHOT™ — game name, art, and rules owned by Jason Howe-Smith.
@@ -42,21 +42,21 @@ export default function ShopPage() {
             <ProductCard
               key={p.id}
               product={p}
-              featured={p.id === "full-kit"}
+              featured={p.id === "cards"}
             />
           ))}
         </div>
 
         <div className="mt-20 mb-10 max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
-            Coming soon · New products
+            Coming soon
           </p>
           <h2 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-wide text-offwhite sm:text-5xl">
-            Cages & board
+            Kits, boards & cages
           </h2>
           <p className="mt-4 text-lg text-offwhite/70">
-            Wire spiders for your own sisal board, plus a simplified STACKSHOT
-            face — no doubles or triples. Not for sale yet.
+            Full Game Kit, Starter Set, paper board refills, wire cages, and the
+            simplified STACKSHOT board — not for sale yet.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ShopPage() {
             </li>
             <li className="flex gap-2">
               <span className="text-gold">▸</span>
-              Full Kit ships 3 paper boards — start with no dartboard
+              Pre-order the deck now — kits and boards coming soon
             </li>
             <li className="flex gap-2">
               <span className="text-gold">▸</span>

@@ -58,7 +58,7 @@ export default function ProductCard({ product, featured }: Props) {
               onClick={() => addItem(product.id)}
               className="w-full rounded-md bg-gold py-3 text-sm font-bold uppercase tracking-wider text-charcoal transition hover:bg-gold-dim"
             >
-              Add to cart
+              {product.badge === "Pre-order" ? "Pre-order" : "Add to cart"}
             </button>
           ) : (
             <button

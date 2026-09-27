@@ -63,15 +63,15 @@ export default function HomePage() {
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-offwhite/85">
               The hybrid card-and-darts game for 1–6 players. Deal a face-down
               stack, flip your target, spend four darts a turn, and race to
-              clear your cards — then checkout on the bull. Full Kit includes 3
-              paper boards so you can start with no dartboard.
+              clear your cards — then checkout on the bull. Pre-order the deck
+              now; Full Kit and boards are coming soon.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href="/shop"
                 className="rounded-md bg-gold px-6 py-3 text-sm font-bold uppercase tracking-wider text-charcoal transition hover:bg-gold-dim"
               >
-                Shop now
+                Pre-order deck
               </Link>
               <Link
                 href="/#how-it-plays"
@@ -317,9 +317,9 @@ export default function HomePage() {
                 Play tonight.
               </h2>
               <p className="mt-2 max-w-xl text-offwhite/65">
-                Full Kit ships 3 paper boards so you start with no dartboard. Starter
-                Set is C$24.99 with your own darts and board. Paper board
-                refills are $4.99 when you need them.
+                Pre-order the STACKSHOT deck at C$24.99 — bring your own darts
+                and board. Full Game Kit, Starter Set, paper boards, cages, and
+                the branded board are coming soon.
               </p>
             </div>
             <Link
@@ -331,7 +331,7 @@ export default function HomePage() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {shopProducts.map((p) => (
-              <ProductCard key={p.id} product={p} featured={p.id === "full-kit"} />
+              <ProductCard key={p.id} product={p} featured={p.id === "cards"} />
             ))}
           </div>
         </div>

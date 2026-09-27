@@ -1,4 +1,5 @@
 export type ProductId =
+  | "cards"
   | "full-kit"
   | "starter"
   | "paper-boards"
@@ -20,6 +21,21 @@ export type Product = {
 
 export const products: Product[] = [
   {
+    id: "cards",
+    name: "STACKSHOT Deck",
+    price: 24.99,
+    priceLabel: "C$24.99",
+    description:
+      "The full 72-card STACKSHOT deck — Pre-order at C$24.99. Bring your own darts and board.",
+    includes: [
+      "72-card STACKSHOT deck",
+      "Use your own darts & board",
+    ],
+    image: "/assets/sku-cards-cardback.png",
+    available: true,
+    badge: "Pre-order",
+  },
+  {
     id: "full-kit",
     name: "Full Game Kit",
     price: 49.99,
@@ -33,8 +49,8 @@ export const products: Product[] = [
       "Quickstart rules sheet",
     ],
     image: "/assets/kit-with-3-boards.png",
-    available: true,
-    badge: "Best value",
+    available: false,
+    badge: "Coming soon",
   },
   {
     id: "starter",
@@ -42,15 +58,14 @@ export const products: Product[] = [
     price: 24.99,
     priceLabel: "C$24.99",
     description:
-      "Only C$24.99 when you bring your own darts and board — full deck plus branded flights.",
+      "Full deck for players who bring their own darts and board.",
     includes: [
       "72-card STACKSHOT deck",
-      "4 branded dart flights",
       "Use your own darts & board",
     ],
-    image: "/assets/starter-set.png",
-    available: true,
-    badge: "Own darts & board",
+    image: "/assets/sku-cards-cardback.png",
+    available: false,
+    badge: "Coming soon",
   },
   {
     id: "paper-boards",
@@ -61,7 +76,8 @@ export const products: Product[] = [
       "Five branded 24×24 rolled paper dartboards — refills when yours are worn out, plus extras for play-anywhere nights.",
     includes: ["5 × 24×24 rolled paper dartboards", "STACKSHOT branded"],
     image: "/assets/paper-5pack-addon.png",
-    available: true,
+    available: false,
+    badge: "Coming soon",
   },
   {
     id: "cage-wire",
