@@ -17,4 +17,11 @@ export const scrollClips: ScrollClip[] = [
     caption: "Cards + darts — clear your stack, hit the bull.",
     aspect: "9 / 16",
   },
+  {
+    id: "clip-02",
+    src: "/assets/scroll-clip-02.mp4",
+    title: "Deal. Flip. Aim.",
+    caption: "Shuffle up, flip your target, throw for the clear.",
+    aspect: "9 / 16",
+  },
 ];

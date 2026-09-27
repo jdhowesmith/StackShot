@@ -119,6 +119,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SeeItPlaySection />
+
       {/* How it plays */}
       <section
         id="how-it-plays"
@@ -306,7 +308,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SeeItPlaySection />
 
       {/* Product strip */}
       <section className="border-b border-gold/15 bg-gradient-to-b from-charcoal to-emerald/40">

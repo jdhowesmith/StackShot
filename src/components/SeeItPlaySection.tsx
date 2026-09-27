@@ -32,7 +32,7 @@ export default function SeeItPlaySection() {
             scrollClips.length === 1
               ? "grid-cols-1"
               : scrollClips.length === 2
-                ? "sm:grid-cols-2"
+                ? "md:grid-cols-2"
                 : "sm:grid-cols-2 lg:grid-cols-3"
           }`}
         >
