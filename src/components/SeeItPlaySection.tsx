@@ -1,7 +1,20 @@
+"use client";
+
+import { useCallback, useState } from "react";
 import { scrollClips } from "@/lib/scrollClips";
 import ScrollClipCard from "@/components/ScrollClipCard";
 
 export default function SeeItPlaySection() {
+  const [playingId, setPlayingId] = useState<string | null>(null);
+
+  const handlePlay = useCallback((id: string) => {
+    setPlayingId(id);
+  }, []);
+
+  const handleStop = useCallback((id: string) => {
+    setPlayingId((current) => (current === id ? null : current));
+  }, []);
+
   if (scrollClips.length === 0) return null;
 
   return (
@@ -22,8 +35,8 @@ export default function SeeItPlaySection() {
             See it play
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-offwhite/65">
-            Short clips of STACKSHOT in the wild — with sound, autoplay when you
-            scroll them into view.
+            Short clips of STACKSHOT in the wild — tap play for sound. Only one
+            plays at a time; tap the other anytime to switch or restart.
           </p>
         </div>
 
@@ -37,7 +50,13 @@ export default function SeeItPlaySection() {
           }`}
         >
           {scrollClips.map((clip) => (
-            <ScrollClipCard key={clip.id} clip={clip} />
+            <ScrollClipCard
+              key={clip.id}
+              clip={clip}
+              isActive={playingId === clip.id}
+              onPlay={handlePlay}
+              onStop={handleStop}
+            />
           ))}
         </div>
       </div>
