@@ -20,7 +20,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
-            src="/assets/logo.png"
+            src="/assets/logo-clear.png"
             alt="STACKSHOT"
             width={160}
             height={48}

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <div className="flex flex-col items-center gap-2 sm:items-start">
             <Image
-              src="/assets/logo.png"
+              src="/assets/logo-clear.png"
               alt="STACKSHOT™"
               width={140}
               height={42}

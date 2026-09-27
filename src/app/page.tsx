@@ -50,11 +50,11 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:items-center lg:py-20">
           <div>
             <Image
-              src="/assets/logo.png"
+              src="/assets/logo-clear.png"
               alt="STACKSHOT"
-              width={320}
-              height={96}
-              className="mb-4 h-16 w-auto sm:h-20"
+              width={280}
+              height={240}
+              className="mb-4 h-20 w-auto drop-shadow-[0_2px_12px_rgba(0,0,0,0.65)] sm:h-24"
               priority
             />
             <p className="font-[family-name:var(--font-display)] text-4xl tracking-[0.12em] text-gold sm:text-5xl">
