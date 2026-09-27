@@ -22,7 +22,7 @@ export default function SeeItPlaySection() {
             See it play
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-offwhite/65">
-            Short clips of STACKSHOT in the wild — muted, autoplay when you
+            Short clips of STACKSHOT in the wild — with sound, autoplay when you
             scroll them into view.
           </p>
         </div>
