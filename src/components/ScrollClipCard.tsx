@@ -94,7 +94,7 @@ export default function ScrollClipCard({ clip }: Props) {
       >
         <video
           ref={videoRef}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           src={clip.src}
           playsInline
           loop

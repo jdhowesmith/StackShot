@@ -15,13 +15,13 @@ export const scrollClips: ScrollClip[] = [
     src: "/assets/scroll-clip-01.mp4",
     title: "Flip. Throw. Clear.",
     caption: "Cards + darts — clear your stack, hit the bull.",
-    aspect: "9 / 16",
+    aspect: "464 / 688",
   },
   {
     id: "clip-02",
     src: "/assets/scroll-clip-02.mp4",
     title: "Deal. Flip. Aim.",
     caption: "Shuffle up, flip your target, throw for the clear.",
-    aspect: "9 / 16",
+    aspect: "464 / 688",
   },
 ];
