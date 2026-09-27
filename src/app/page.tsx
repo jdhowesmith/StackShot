@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import SeeItPlaySection from "@/components/SeeItPlaySection";
 import { shopProducts } from "@/lib/products";
 
 const steps = [
@@ -304,6 +305,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <SeeItPlaySection />
 
       {/* Product strip */}
       <section className="border-b border-gold/15 bg-gradient-to-b from-charcoal to-emerald/40">

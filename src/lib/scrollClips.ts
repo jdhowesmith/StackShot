@@ -1,0 +1,20 @@
+export type ScrollClip = {
+  id: string;
+  src: string;
+  title: string;
+  caption?: string;
+  /** CSS aspect ratio, e.g. "9 / 16" for portrait phone clips */
+  aspect?: string;
+};
+
+/** Gameplay / promo clips for the homepage “See it play” section.
+ *  Add more entries here — the section maps the array. */
+export const scrollClips: ScrollClip[] = [
+  {
+    id: "clip-01",
+    src: "/assets/scroll-clip-01.mp4",
+    title: "Flip. Throw. Clear.",
+    caption: "Cards + darts — clear your stack, hit the bull.",
+    aspect: "9 / 16",
+  },
+];
