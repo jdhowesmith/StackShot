@@ -138,8 +138,8 @@ export default function ShopPage() {
             Kits, boards & cages
           </h2>
           <p className="mt-4 text-lg text-offwhite/70">
-            Full Game Kit, Starter Set, paper board refills, wire cages, and the
-            simplified STACKSHOT board — not for sale yet.
+            Full Game Kit, paper board refills, wire cages, and the simplified
+            STACKSHOT board — not for sale yet.
           </p>
         </div>
 

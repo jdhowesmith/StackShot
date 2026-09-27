@@ -1,7 +1,6 @@
 export type ProductId =
   | "cards"
   | "full-kit"
-  | "starter"
   | "paper-boards"
   | "cage-wire"
   | "cage-numbers"
@@ -71,21 +70,6 @@ export const products: Product[] = [
       "Quickstart rules sheet",
     ],
     image: "/assets/kit-with-3-boards.png",
-    available: false,
-    badge: "Coming soon",
-  },
-  {
-    id: "starter",
-    name: "Starter Set",
-    price: 24.99,
-    priceLabel: "C$24.99",
-    description:
-      "Full deck for players who bring their own darts and board.",
-    includes: [
-      "72-card STACKSHOT deck",
-      "Use your own darts & board",
-    ],
-    image: "/assets/sku-cards-cardback.png",
     available: false,
     badge: "Coming soon",
   },
