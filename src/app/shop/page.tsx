@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import { comingSoonProducts, shopProducts } from "@/lib/products";
 
@@ -24,6 +25,15 @@ export default function ShopPage() {
             dartboard. Starter Set is C$24.99 if you bring your own darts and
             board. Paper Boards add-on for refills. Prices in CAD. Cart saves
             on this device. Players 1–6.
+          </p>
+          <p className="mt-3 text-sm text-offwhite/50">
+            STACKSHOT™ — game name, art, and rules owned by Jason Howe-Smith.
+            Steel-tip darts can injure; use a proper board and clear throw
+            path.{" "}
+            <Link href="/legal" className="text-gold/80 hover:text-gold hover:underline">
+              Legal notice
+            </Link>
+            .
           </p>
         </div>
 
