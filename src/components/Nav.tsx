@@ -24,7 +24,7 @@ export default function Nav() {
             alt="STACKSHOT"
             width={160}
             height={48}
-            className="h-10 w-auto sm:h-11"
+            className="h-10 w-auto drop-shadow-[0_1px_10px_rgba(245,242,232,0.4)] sm:h-11"
             priority
           />
         </Link>

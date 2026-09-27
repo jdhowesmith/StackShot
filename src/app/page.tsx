@@ -54,7 +54,7 @@ export default function HomePage() {
               alt="STACKSHOT"
               width={280}
               height={240}
-              className="mb-4 h-20 w-auto drop-shadow-[0_2px_12px_rgba(0,0,0,0.65)] sm:h-24"
+              className="mb-5 h-24 w-auto brightness-110 drop-shadow-[0_0_18px_rgba(245,242,232,0.55)] sm:h-28"
               priority
             />
             <p className="font-[family-name:var(--font-display)] text-4xl tracking-[0.12em] text-gold sm:text-5xl">

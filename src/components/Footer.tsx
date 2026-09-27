@@ -12,7 +12,7 @@ export default function Footer() {
               alt="STACKSHOT™"
               width={140}
               height={42}
-              className="h-9 w-auto opacity-90"
+              className="h-9 w-auto opacity-95 drop-shadow-[0_1px_8px_rgba(245,242,232,0.35)]"
             />
             <p className="text-sm tracking-wide text-gold">
               Flip. Throw. Clear.{" "}
