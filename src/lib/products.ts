@@ -5,7 +5,8 @@ export type ProductId =
   | "paper-boards"
   | "cage-wire"
   | "cage-numbers"
-  | "board-simplified";
+  | "board-simplified"
+  | "jr";
 
 export type Product = {
   id: ProductId;
@@ -15,6 +16,8 @@ export type Product = {
   description: string;
   includes: string[];
   image: string;
+  /** Optional secondary image (e.g. JR color cards flat lay). */
+  imageAlt?: string;
   available: boolean;
   badge?: string;
 };
@@ -34,6 +37,25 @@ export const products: Product[] = [
     image: "/assets/sku-cards-cardback.png",
     available: true,
     badge: "Pre-order",
+  },
+  {
+    id: "jr",
+    name: "STACKSHOT JR",
+    price: null,
+    priceLabel: "Coming soon",
+    description:
+      "Little throwers, big smiles! Soft-tip fun for ages 4+ — a bright 4-color board, soft darts, and colorful match cards so kids can stack shots without the sharp stuff. Same Flip · Throw · Clear energy, kid-sized.",
+    includes: [
+      "Ages 4+",
+      "Soft darts (kid-safe tips)",
+      "Bright 4-color STACKSHOT JR board",
+      "4 color match cards",
+      "Mini tuck box",
+    ],
+    image: "/assets/sku-jr-kit.jpg",
+    imageAlt: "/assets/sku-jr-cards.jpg",
+    available: false,
+    badge: "Coming soon",
   },
   {
     id: "full-kit",
@@ -137,6 +159,11 @@ export const products: Product[] = [
 
 export const shopProducts = products.filter((p) => p.available);
 export const comingSoonProducts = products.filter((p) => !p.available);
+/** Featured kids line — shown in its own Coming soon subsection. */
+export const jrProduct = products.find((p) => p.id === "jr")!;
+export const comingSoonAdultProducts = comingSoonProducts.filter(
+  (p) => p.id !== "jr"
+);
 
 export function getProduct(id: ProductId): Product | undefined {
   return products.find((p) => p.id === id);
