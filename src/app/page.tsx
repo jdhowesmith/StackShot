@@ -106,9 +106,9 @@ export default function HomePage() {
               controls
               playsInline
               preload="metadata"
-              poster="/assets/box-front.png?v=1-6"
+              poster="/assets/box-front.png?v=cards-72-2"
             >
-              <source src="/assets/STACKSHOT-sales-web.mp4?v=cards-72-1" type="video/mp4" />
+              <source src="/assets/STACKSHOT-sales-web.mp4?v=cards-72-2" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="border-t border-gold/15 px-4 py-2 text-center text-xs text-offwhite/50">
