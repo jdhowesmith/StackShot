@@ -32,7 +32,7 @@ export default function SeeItPlaySection() {
             id="see-it-play-heading"
             className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-wide text-offwhite sm:text-5xl"
           >
-            See it play
+            LET’S PLAY
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-offwhite/65">
             Short clips of STACKSHOT in the wild — tap play for sound. Only one

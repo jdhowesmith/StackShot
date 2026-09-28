@@ -7,7 +7,7 @@ export type ScrollClip = {
   aspect?: string;
 };
 
-/** Gameplay / promo clips for the homepage “See it play” section.
+/** Gameplay / promo clips for the homepage “LET’S PLAY” section.
  *  Add more entries here — the section maps the array. */
 export const scrollClips: ScrollClip[] = [
   {
