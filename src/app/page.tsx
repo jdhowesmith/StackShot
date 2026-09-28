@@ -106,9 +106,9 @@ export default function HomePage() {
               controls
               playsInline
               preload="metadata"
-              poster="/assets/box-front.png?v=continuous-sonia-slide12-4"
+              poster="/assets/box-front.png?v=cont-sonia-cards72-slide12-6"
             >
-              <source src="/assets/STACKSHOT-sales-web.mp4?v=continuous-sonia-slide12-4" type="video/mp4" />
+              <source src="/assets/STACKSHOT-sales-web.mp4?v=cont-sonia-cards72-slide12-6" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="border-t border-gold/15 px-4 py-2 text-center text-xs text-offwhite/50">
