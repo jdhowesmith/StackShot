@@ -321,7 +321,7 @@ export default function HomePage() {
                 Play tonight.
               </h2>
               <p className="mt-2 max-w-xl text-offwhite/65">
-                Pre-order the STACKSHOT deck at C$24.99 — bring your own darts
+                Pre-order the STACKSHOT deck at C$29.99 — bring your own darts
                 and board. Full Game Kit, paper boards, cages, and the branded board
                 are coming soon.
               </p>

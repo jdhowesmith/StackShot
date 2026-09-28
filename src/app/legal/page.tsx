@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Legal — STACKSHOT",
@@ -116,10 +115,10 @@ export default function LegalPage() {
         </section>
 
         <p className="mt-10 text-sm text-offwhite/50">
-          Questions about licensing or permissions: contact the owner via{" "}
-          <Link href="/shop" className="text-gold hover:underline">
-            stackshot.ca
-          </Link>
+          Questions about licensing or permissions: contact the owner at{" "}
+          <a href="mailto:stackshot.ca@gmail.com" className="text-gold hover:underline">
+            stackshot.ca@gmail.com
+          </a>
           .
         </p>
       </div>

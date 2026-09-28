@@ -25,10 +25,10 @@ export const products: Product[] = [
   {
     id: "cards",
     name: "STACKSHOT Deck",
-    price: 24.99,
-    priceLabel: "C$24.99",
+    price: 29.99,
+    priceLabel: "C$29.99",
     description:
-      "The full 72-card STACKSHOT deck — Pre-order at C$24.99. Bring your own darts and board.",
+      "The full 72-card STACKSHOT deck — Pre-order at C$29.99. Bring your own darts and board.",
     includes: [
       "72-card STACKSHOT deck",
       "Use your own darts & board",

@@ -32,7 +32,9 @@ export default function Footer() {
             <Link href="/legal" className="hover:text-gold">
               Legal
             </Link>
-            <span className="text-offwhite/30">stackshot.ca</span>
+            <a href="mailto:stackshot.ca@gmail.com" className="text-offwhite/60 hover:text-gold">
+              stackshot.ca@gmail.com
+            </a>
           </div>
         </div>
         <div className="space-y-2 border-t border-gold/10 pt-6 text-center text-xs leading-relaxed text-offwhite/45 sm:text-left">

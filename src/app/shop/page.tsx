@@ -26,10 +26,17 @@ export default function ShopPage() {
             Pre-order the deck.
           </h1>
           <p className="mt-4 text-lg text-offwhite/70">
-            The STACKSHOT card deck is open for Pre-order at C$24.99 — bring your
+            The STACKSHOT card deck is open for Pre-order at C$29.99 — bring your
             own darts and board. STACKSHOT JR (ages 4+), Full Game Kit, cages,
             and the branded board are coming soon. Prices in CAD. Cart saves on
             this device.
+          </p>
+          <p className="mt-3 text-sm text-offwhite/50">
+            Questions about the deck or your order?{" "}
+            <a href="mailto:stackshot.ca@gmail.com" className="text-gold/80 hover:text-gold hover:underline">
+              stackshot.ca@gmail.com
+            </a>
+            .
           </p>
           <p className="mt-3 text-sm text-offwhite/50">
             STACKSHOT™ — game name, art, and rules owned by Jason Howe-Smith.

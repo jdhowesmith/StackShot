@@ -34,7 +34,7 @@ npm start
 ## Pages
 
 - `/` — marketing home (hero, sales video, how it plays, product strip, what’s in the box)
-- `/shop` — STACKSHOT Deck (C$24.99), Full Game Kit, Paper Boards Add-on, cages, and branded board with client-side cart (localStorage)
+- `/shop` — STACKSHOT Deck (C$29.99), Full Game Kit, Paper Boards Add-on, cages, and branded board with client-side cart (localStorage)
 
 ## Assets
 
