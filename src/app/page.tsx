@@ -106,9 +106,9 @@ export default function HomePage() {
               controls
               playsInline
               preload="metadata"
-              poster="/assets/box-front.png?v=no-flip-woman-1"
+              poster="/assets/box-front.png?v=static-s2s3-1"
             >
-              <source src="/assets/STACKSHOT-sales-web.mp4?v=no-flip-woman-1" type="video/mp4" />
+              <source src="/assets/STACKSHOT-sales-web.mp4?v=static-s2s3-1" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="border-t border-gold/15 px-4 py-2 text-center text-xs text-offwhite/50">
