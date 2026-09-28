@@ -108,7 +108,7 @@ export default function HomePage() {
               preload="metadata"
               poster="/assets/box-front.png?v=1-6"
             >
-              <source src="/assets/STACKSHOT-sales-web.mp4?v=cont-sonia-1" type="video/mp4" />
+              <source src="/assets/STACKSHOT-sales-web.mp4?v=cards-72-1" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="border-t border-gold/15 px-4 py-2 text-center text-xs text-offwhite/50">
