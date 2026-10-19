@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import FirstPrintGallery from "@/components/FirstPrintGallery";
 import ProductCard from "@/components/ProductCard";
 import {
   comingSoonAdultProducts,
@@ -58,6 +59,9 @@ export default function ShopPage() {
             />
           ))}
         </div>
+
+        {/* TEMPORARY first-print photos — see src/lib/firstPrintPhotos.ts */}
+        <FirstPrintGallery className="mt-16" />
 
         {/* Coming soon — STACKSHOT JR (kids) */}
         <section

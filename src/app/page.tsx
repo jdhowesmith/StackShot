@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import FirstPrintGallery from "@/components/FirstPrintGallery";
 import ProductCard from "@/components/ProductCard";
 import SeeItPlaySection from "@/components/SeeItPlaySection";
 import { jrProduct, shopProducts } from "@/lib/products";
@@ -338,6 +339,8 @@ export default function HomePage() {
               <ProductCard key={p.id} product={p} featured={p.id === "cards"} />
             ))}
           </div>
+          {/* TEMPORARY first-print photos — see src/lib/firstPrintPhotos.ts */}
+          <FirstPrintGallery className="mt-14" />
         </div>
       </section>
 
